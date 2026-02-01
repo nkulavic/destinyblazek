@@ -86,7 +86,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
 export default function V3Page() {
   return (
     <main>
-      <Header />
+      <Header variant="dark" />
 
       {/* Hero - Full Screen Immersive */}
       <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-forest-dark via-forest to-forest-light text-white overflow-hidden">
@@ -193,7 +193,7 @@ export default function V3Page() {
             </motion.span>
             <motion.h2
               variants={fadeInUp}
-              className="font-heading text-4xl md:text-5xl lg:text-6xl text-forest-dark mb-6"
+              className="font-heading text-4xl md:text-5xl lg:text-6xl text-forest-dark mb-8"
             >
               {coachingProgram.title}
             </motion.h2>
@@ -495,7 +495,7 @@ export default function V3Page() {
           >
             <motion.h2
               variants={fadeInUp}
-              className="font-heading text-4xl md:text-5xl lg:text-6xl mb-6 text-white"
+              className="font-heading text-4xl md:text-5xl lg:text-6xl mb-8 text-white"
             >
               Ready to Transform?
             </motion.h2>

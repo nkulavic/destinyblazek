@@ -150,7 +150,7 @@ export default function Home() {
               </motion.p>
               <motion.h2
                 variants={fadeInUp}
-                className="font-heading text-3xl md:text-4xl text-forest-dark mb-6"
+                className="font-heading text-3xl md:text-4xl text-forest-dark mb-8"
               >
                 My Path to Wellness Coaching
               </motion.h2>
@@ -222,7 +222,7 @@ export default function Home() {
             </motion.p>
             <motion.h2
               variants={fadeInUp}
-              className="font-heading text-3xl md:text-4xl text-forest-dark mb-6"
+              className="font-heading text-3xl md:text-4xl text-forest-dark mb-8"
             >
               {coachingProgram.title}
             </motion.h2>
@@ -334,7 +334,7 @@ export default function Home() {
             </motion.p>
             <motion.h2
               variants={fadeInUp}
-              className="font-heading text-3xl md:text-4xl text-forest-dark mb-6"
+              className="font-heading text-3xl md:text-4xl text-forest-dark mb-8"
             >
               Focus Areas for Your Wellness Journey
             </motion.h2>
@@ -697,7 +697,7 @@ export default function Home() {
           >
             <motion.h2
               variants={fadeInUp}
-              className="font-heading text-3xl md:text-4xl mb-6 !text-white"
+              className="font-heading text-3xl md:text-4xl mb-8 !text-white"
             >
               Ready to Start Your Wellness Journey?
             </motion.h2>

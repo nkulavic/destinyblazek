@@ -86,7 +86,7 @@ export default function V2Page() {
                 <span className="w-2 h-2 bg-forest rounded-full animate-pulse" />
                 Free 8-Session Program
               </div>
-              <h1 className="font-heading text-4xl sm:text-5xl text-forest-dark leading-tight mb-6">
+              <h1 className="font-heading text-4xl sm:text-5xl text-forest-dark leading-tight mb-8">
                 {heroContent.headline}
               </h1>
               <p className="text-lg text-brown leading-relaxed mb-8">
@@ -275,7 +275,7 @@ export default function V2Page() {
           >
             <motion.h2
               variants={fadeInUp}
-              className="font-heading text-3xl md:text-4xl text-forest-dark mb-6"
+              className="font-heading text-3xl md:text-4xl text-forest-dark mb-8"
             >
               My Approach
             </motion.h2>
@@ -506,7 +506,7 @@ export default function V2Page() {
           >
             <motion.h2
               variants={fadeInUp}
-              className="font-heading text-3xl md:text-4xl mb-6 text-white"
+              className="font-heading text-3xl md:text-4xl mb-8 text-white"
             >
               Ready to Start?
             </motion.h2>

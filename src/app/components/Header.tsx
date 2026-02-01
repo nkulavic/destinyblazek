@@ -12,9 +12,16 @@ const navLinks = [
   { href: "#contact", label: "Contact" },
 ];
 
-export default function Header() {
+interface HeaderProps {
+  variant?: "light" | "dark";
+}
+
+export default function Header({ variant = "light" }: HeaderProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  // Use light text when variant is dark AND not scrolled
+  const useLightText = variant === "dark" && !isScrolled;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,14 +43,14 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo / Name */}
           <a href="#" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-full bg-forest flex items-center justify-center">
-              <span className="text-white font-heading text-lg font-bold">D</span>
+            <div className={`w-10 h-10 rounded-full flex items-center justify-center ${useLightText ? "bg-white/20" : "bg-forest"}`}>
+              <span className={`font-heading text-lg font-bold ${useLightText ? "text-white" : "text-white"}`}>D</span>
             </div>
             <div className="hidden sm:block">
-              <p className="font-heading text-lg text-forest-dark font-semibold">
+              <p className={`font-heading text-lg font-semibold ${useLightText ? "text-white" : "text-forest-dark"}`}>
                 {siteConfig.name}
               </p>
-              <p className="text-xs text-brown -mt-0.5">{siteConfig.title}</p>
+              <p className={`text-xs -mt-0.5 ${useLightText ? "text-white/80" : "text-brown"}`}>{siteConfig.title}</p>
             </div>
           </a>
 
@@ -53,14 +60,14 @@ export default function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-brown hover:text-forest transition-colors font-medium"
+                className={`transition-colors font-medium ${useLightText ? "text-white/90 hover:text-white" : "text-brown hover:text-forest"}`}
               >
                 {link.label}
               </a>
             ))}
             <a
               href="#contact"
-              className="btn-primary text-sm py-2.5 px-5"
+              className={`text-sm py-2.5 px-5 rounded-lg font-semibold transition-all ${useLightText ? "bg-white text-forest hover:bg-cream" : "btn-primary"}`}
             >
               Book Free Session
             </a>
@@ -68,7 +75,7 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-forest"
+            className={`md:hidden p-2 ${useLightText ? "text-white" : "text-forest"}`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
