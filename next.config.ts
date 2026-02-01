@@ -1,11 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export",
-  images: {
-    unoptimized: true,
-  },
-  trailingSlash: true,
+  // Vercel handles Next.js hosting natively - no need for static export
 };
 
 export default nextConfig;
