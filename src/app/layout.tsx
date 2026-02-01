@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Lato, Cormorant_Garamond } from "next/font/google";
+import { Playfair_Display, Open_Sans, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -8,10 +8,10 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
-const lato = Lato({
+const openSans = Open_Sans({
   variable: "--font-sans",
   subsets: ["latin"],
-  weight: ["300", "400", "700", "900"],
+  weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -54,7 +54,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${playfair.variable} ${lato.variable} ${cormorant.variable} antialiased bg-cream text-brown-dark`}
+        className={`${playfair.variable} ${openSans.variable} ${cormorant.variable} antialiased bg-cream text-brown-dark`}
       >
         {children}
       </body>

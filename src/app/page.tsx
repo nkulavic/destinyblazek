@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
+import ParallaxSection from "./components/ParallaxSection";
 import { siteConfig, sessionTimes } from "./data/siteConfig";
 import {
   coachingProgram,
@@ -199,6 +200,13 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Parallax Divider - Nature */}
+      <ParallaxSection
+        imageUrl="/images/parallax-leaves.jpg"
+        height="h-48 md:h-64"
+        overlayOpacity={0.2}
+      />
+
       {/* Coaching Program Section */}
       <section id="coaching" className="py-20 md:py-28 bg-gradient-to-b from-cream to-tan-light">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -294,7 +302,7 @@ export default function Home() {
             variants={fadeInUp}
             className="bg-forest text-cream p-8 md:p-12 rounded-2xl"
           >
-            <h3 className="font-heading text-2xl mb-6 text-center">
+            <h3 className="font-heading text-2xl mb-6 text-center !text-white">
               Is This Program Right for You?
             </h3>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
@@ -626,6 +634,13 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Parallax Divider - Forest */}
+      <ParallaxSection
+        imageUrl="/images/parallax-nature.jpg"
+        height="h-48 md:h-64"
+        overlayOpacity={0.25}
+      />
+
       {/* FAQ Section */}
       <section id="faq" className="py-20 md:py-28 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
@@ -660,6 +675,17 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Parallax Divider - Wellness */}
+      <ParallaxSection
+        imageUrl="/images/parallax-wellness.jpg"
+        height="h-56 md:h-72"
+        overlayOpacity={0.35}
+      >
+        <p className="font-accent text-2xl md:text-3xl text-white text-center italic px-4 max-w-2xl">
+          &ldquo;Your journey to wellness begins with a single step&rdquo;
+        </p>
+      </ParallaxSection>
+
       {/* Contact / CTA Section */}
       <section id="contact" className="py-20 md:py-28 bg-gradient-to-br from-forest to-forest-dark text-cream">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
@@ -671,7 +697,7 @@ export default function Home() {
           >
             <motion.h2
               variants={fadeInUp}
-              className="font-heading text-3xl md:text-4xl mb-6"
+              className="font-heading text-3xl md:text-4xl mb-6 !text-white"
             >
               Ready to Start Your Wellness Journey?
             </motion.h2>
