@@ -1,3 +1,16 @@
 {
-  "framework": "nextjs"
+  "framework": "nextjs",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.destinyblazek.health"
+        }
+      ],
+      "destination": "https://destinyblazek.health/:path*",
+      "permanent": true
+    }
+  ]
 }
