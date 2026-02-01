@@ -139,7 +139,7 @@ export default function V2Page() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={staggerContainer}
-            className="text-center mb-16"
+            className="text-center mb-20"
           >
             <motion.h2
               variants={fadeInUp}
@@ -229,7 +229,7 @@ export default function V2Page() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={staggerContainer}
-            className="text-center mb-16"
+            className="text-center mb-20"
           >
             <motion.h2
               variants={fadeInUp}
@@ -271,7 +271,7 @@ export default function V2Page() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={staggerContainer}
-            className="text-center mb-16"
+            className="text-center mb-20"
           >
             <motion.h2
               variants={fadeInUp}
@@ -328,7 +328,7 @@ export default function V2Page() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
-            className="font-heading text-3xl md:text-4xl text-forest-dark text-center mb-16"
+            className="font-heading text-3xl md:text-4xl text-forest-dark text-center mb-20"
           >
             How It Works
           </motion.h2>
@@ -393,7 +393,7 @@ export default function V2Page() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
-            className="font-heading text-3xl md:text-4xl text-forest-dark text-center mb-16"
+            className="font-heading text-3xl md:text-4xl text-forest-dark text-center mb-20"
           >
             Education & Credentials
           </motion.h2>

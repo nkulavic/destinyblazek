@@ -260,7 +260,7 @@ export default function V3Page() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
-            className="font-heading text-4xl md:text-5xl text-forest-dark text-center mb-16"
+            className="font-heading text-4xl md:text-5xl text-forest-dark text-center mb-20"
           >
             Focus Areas
           </motion.h2>
@@ -338,7 +338,7 @@ export default function V3Page() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
-            className="font-heading text-4xl md:text-5xl text-forest-dark text-center mb-16"
+            className="font-heading text-4xl md:text-5xl text-forest-dark text-center mb-20"
           >
             Your Journey
           </motion.h2>
@@ -399,7 +399,7 @@ export default function V3Page() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
-            className="font-heading text-4xl md:text-5xl text-forest-dark text-center mb-16"
+            className="font-heading text-4xl md:text-5xl text-forest-dark text-center mb-20"
           >
             Credentials
           </motion.h2>
@@ -451,7 +451,7 @@ export default function V3Page() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
-            className="font-heading text-4xl md:text-5xl text-forest-dark text-center mb-16"
+            className="font-heading text-4xl md:text-5xl text-forest-dark text-center mb-20"
           >
             Questions?
           </motion.h2>

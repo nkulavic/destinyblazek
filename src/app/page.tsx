@@ -215,7 +215,7 @@ export default function Home() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={staggerContainer}
-            className="text-center max-w-3xl mx-auto mb-16"
+            className="text-center max-w-3xl mx-auto mb-20"
           >
             <motion.p variants={fadeInUp} className="text-forest font-medium mb-3">
               Free Coaching Program
@@ -327,7 +327,7 @@ export default function Home() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={staggerContainer}
-            className="text-center max-w-3xl mx-auto mb-16"
+            className="text-center max-w-3xl mx-auto mb-20"
           >
             <motion.p variants={fadeInUp} className="text-forest font-medium mb-3">
               What We Can Work On
@@ -375,7 +375,7 @@ export default function Home() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={staggerContainer}
-            className="text-center max-w-3xl mx-auto mb-16"
+            className="text-center max-w-3xl mx-auto mb-20"
           >
             <motion.p variants={fadeInUp} className="text-forest font-medium mb-3">
               My Approach
@@ -460,7 +460,7 @@ export default function Home() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={staggerContainer}
-            className="text-center max-w-3xl mx-auto mb-16"
+            className="text-center max-w-3xl mx-auto mb-20"
           >
             <motion.p variants={fadeInUp} className="text-forest font-medium mb-3">
               Getting Started
@@ -533,7 +533,7 @@ export default function Home() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={staggerContainer}
-            className="text-center max-w-3xl mx-auto mb-16"
+            className="text-center max-w-3xl mx-auto mb-20"
           >
             <motion.p variants={fadeInUp} className="text-forest font-medium mb-3">
               Credentials
